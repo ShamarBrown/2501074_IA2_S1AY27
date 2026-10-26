@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Conf 2026 | Your Ticket</title>
+    <link rel="stylesheet" href="/2501074_IA2_S1AY27/CSS/style.css">
+    <link rel="icon" type="image/png" href="/2501074_IA2_S1AY27/ASSETS/favicon-32x32 (1).png">
+</head>
+<body>
+<header>
+      <a class="visually-hidden" href="#main">Skip to main content</a>
+
+       <nav aria-label="site-header">
+            <a class="logo" href="index.html">
+                <img src="/2501074_IA2_S1AY27/ASSETS/logo-full (1).svg" alt="Coding Conf Logo">
+            </a>
+        </nav>
+    </header>
+    <main id="main" class="page">
+    <section class="success-message">
+      <h1>Congrats,<span class="accent" id="out-name">Attendee</span>! Your ticket is ready.</h1>
+      <p>We've emailed your ticket to <span class="accent-text" id="out-email">your email</span> and will send updates in the run up to the event.</p>
+    </section>
+    <!-- this is used filled in by js/ticket.js -->
+    <article class="ticket" id="ticket">
+      <div class="ticket-main">
+        <header class="ticket-brand">
+          <img src="/2501074_IA2_S1AY27/ASSETS/logo-mark (1).svg" alt="Coding Conf Logo">
+          <div>
+            <h2>Coding Conf 2026</h2>
+            <p class="ticket-meta"><time datetime="2026-10-26">Oct 26, 2026</time> / Papine, Kgn</p>
+          </div>
+        </header>
+        <div class="attendee">
+          <img id="out-avatar" src="" alt="Your avatar">
+          <h3 class="attendee-name" id="out-fullname"></h3>
+          <p class="attendee-github">
+            <img src="/2501074_IA2_S1AY27/ASSETS/icon-github (1).svg" alt="GitHub">
+            <span id="out-github"></span>
+          </p>
+        </div>
+      </div>  
+        
+      <div class="ticket-stub">
+          <span class="serial">Ticket ID: <span id="out-serial"></span></span>
+        </div>
+      </div>
+    </article>
+  </main>
+ 
+  <footer class="site-footer">
+    <a href="index.html">back to home</a>
+    <p>&copy; 2023 Coding Conf. All rights reserved.</p>
+  </footer>
+
+  <script src="/2501074_IA2_S1AY27/JS/ticket.js"></script>
+</body>
+</html>

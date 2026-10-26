@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Conf 2026 | Register</title>
+    <link rel="icon" href="/2501074_IA2_S1AY27/ASSETS/logo-full (1).svg">
+    <link rel="stylesheet" href="/2501074_IA2_S1AY27/CSS/style.css">
+    <link rel="icon" type="image/png" href="/2501074_IA2_S1AY27/ASSETS/favicon-32x32 (1).png">
+</head>
+<body>
+    <header>
+       <a class="visually-hidden" href="#main">Skip to main content</a>
+
+       <nav aria-label="site-header">
+            <a class="logo" href="/2501074_IA2_S1AY27/index.html">
+                <img src="/2501074_IA2_S1AY27/ASSETS/logo-full (1).svg" alt="Coding Conf Logo">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+        <h2>Your Journey to Coding Conf 2026 Starts Here!</h2>
+         <p class="metadata-description">Secure your spot at next year's coding conference!
+         </p>
+         <!-- novalidate: the validation is done in js/validation.js-->
+        <form action="ticket.html" method="get" id="reg-form" class="reg-form" novalidate>
+        <div class="field">
+            <span class="label" id="avatar-label">Upload Avatar</span>
+            <div class="dropzone" id="dropzone">
+            <!-- Empty state: the label opens the hidden file input -->
+            <div id="drop-empty" class="dropzone-empty">
+                <label for="avatar">
+                    <img class="icon-box" src="/2501074_IA2_S1AY27/ASSETS/icon-upload (1).svg" alt="Upload Icon">
+                    <span>Drag and drop or click to upload</span>
+                </label>
+          </div>
+          <!-- Previews the the avatar -->
+          <div id="drop-preview" hidden>
+            <img id="preview-img" class="preview" src="" alt="Preview of your uploaded avatar">
+            <div class="dropzone-actions">
+              <button type="button" id="remove-btn">Remove image</button>
+              <button type="button" id="change-btn">Change image</button>
+            </div>
+          </div>
+          <input class="visually-hidden" type="file" id="avatar" name="avatar"
+                 accept="image/png, image/jpeg" aria-describedby="avatar-hint">
+        </div>
+        <p class="hint" id="avatar-hint">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+
+            <div class="form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-hint">
+                <p class="hint error" id="name-hint" role="alert" hidden></p>
+            </div>
+
+            <div class="form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" autocomplete="email" aria-describedby="email-hint">
+                <p class="hint error" id="email-hint" role="alert" hidden></p>
+            </div>
+
+            <div class="form">
+                <label for="github">Github Username</label>
+                <input type="text" id="github" name="github" placeholder="@githubusername" autocomplete="off" aria-describedby="github-hint">
+                <p class="hint error" id="github-hint" role="alert" hidden></p>
+            </div>
+
+            <button class="btn" type="submit">Generate My Ticket</button>
+    </main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Coding Conf. CIT2011 Web Programming IA#2.</p>
+</footer>
+
+    <script src="/2501074_IA2_S1AY27/JS/validation.js"></script>
+</body>
+</html>
