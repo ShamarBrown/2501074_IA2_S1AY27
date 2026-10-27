@@ -14,7 +14,7 @@ const ticket = loadTicket();
 
 if (!ticket) {
   // no data means the form was never completed
-  window.location.replace("index.html");
+  window.location.replace("Index.html");
 } else {
   document.getElementById("out-name").textContent = ticket.name;
   document.getElementById("out-email").textContent = ticket.email;
