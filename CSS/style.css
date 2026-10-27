@@ -10,8 +10,8 @@
   --glass-border: rgb(255 255 255 / 0.5);
   --field-bg: rgb(255 255 255 / 0.08);
   --field-border: rgb(255 255 255 / 0.45);
-  --bg-image: url("../assets/background-mobile (1).png");
-  --squiggle-bottom: url("../assets/pattern-squiggly-line-bottom-mobile-tablet (1).svg");
+  --bg-image: url("../ASSETS/background-mobile (1).png");
+  --squiggle-bottom: url("../ASSETS/pattern-squiggly-line-bottom-mobile-tablet (1).svg");
   --circle-size: clamp(6rem, 15vw, 13.5rem);
   --radius: 0.75rem;
   --gap: clamp(1rem, 3vw, 1.75rem);
@@ -36,9 +36,9 @@ body {
   line-height: 1.5;
   color: var(--white);
   background:
-    url("../assets/pattern-circle (1).svg") no-repeat 4vw -3rem / var(--circle-size),
-    url("../assets/pattern-circle (1).svg") no-repeat 78% 52% / var(--circle-size),
-    url("../assets/pattern-lines (1).svg") repeat-x center top / auto 64rem,
+    url("../ASSETS/pattern-circle (1).svg") no-repeat 4vw -3rem / var(--circle-size),
+    url("../ASSETS/pattern-circle (1).svg") no-repeat 78% 52% / var(--circle-size),
+    url("../ASSETS/pattern-lines (1).svg") repeat-x center top / auto 64rem,
     var(--bg-image) center / cover no-repeat,
     var(--space-900);
 }
@@ -75,7 +75,7 @@ body::before {
   aspect-ratio: 446 / 208;
   right: 0;
   top: clamp(1rem, 4vw, 5rem);
-  background-image: url("../assets/pattern-squiggly-line-top (1).svg");
+  background-image: url("../ASSETS/pattern-squiggly-line-top (1).svg");
 }
 body::after { 
   width: min(100%, 47.5rem);
@@ -234,10 +234,10 @@ body::after {
   content: "";
   flex: none;
   width: 1rem; height: 1rem;
-  background: url("../assets/icon-info (1).svg") center / contain no-repeat;
+  background: url("../ASSETS/icon-info (1).svg") center / contain no-repeat;
 }
 .hint.error { color: var(--coral); }
-.hint.error::before { background-image: url("../assets/icon-info-error (1).svg"); }
+.hint.error::before { background-image: url("../ASSETS/icon-info-error (1).svg"); }
 .hint[hidden] { display: none; }
 /* lets the whole form react to an invalid input */
 .form:has([aria-invalid="true"]) :is(input, .dropzone) { border-color: var(--coral); }
@@ -252,7 +252,7 @@ body::after {
   aspect-ratio: 600 / 280;
   margin-inline: auto;
   border-radius: var(--radius);
-  background: url("../assets/pattern-ticket (1).svg") center / 100% 100% no-repeat;
+  background: url("../ASSETS/pattern-ticket (1).svg") center / 100% 100% no-repeat;
   backdrop-filter: blur(16px); 
   text-align: left;
   transition: transform 0.3s;
@@ -296,8 +296,8 @@ body::after {
 }
 @media (min-width: 64rem) {
   :root {
-    --bg-image: url("../assets/background-desktop (1).png");
-    --squiggle-bottom: url("../assets/pattern-squiggly-line-bottom-desktop (1).svg");
+    --bg-image: url("../ASSETS/background-desktop (1).png");
+    --squiggle-bottom: url("../ASSETS/pattern-squiggly-line-bottom-desktop (1).svg");
   }
   body::after { aspect-ratio: 825 / 400; width: min(100%, 51.5rem); }
 }
